@@ -1,0 +1,22 @@
+{
+  "name": "robin-hood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supertopoz/robin-hood.git"
+  },
+  "author": "Jason Allshorn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supertopoz/robin-hood/issues"
+  },
+  "homepage": "https://github.com/supertopoz/robin-hood#readme",
+  "dependencies": {
+    "react": "^16.2.0"
+  }
+}
