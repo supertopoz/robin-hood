@@ -1,0 +1,5 @@
+{
+  "presets": ["env", "react"],
+  "plugins": ["transform-decorators-legacy","react-hot-loader/babel"]
+
+}
