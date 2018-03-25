@@ -1,11 +1,10 @@
 const styleReducer = (state = { styles: {
-  loadingBar: true
-
+  sideMenu: 0
 }}, action) => {
 	switch (action.type) {
-		case "SET_LOADING_BAR": {
-			console.log('Hit Reducer')
-		  return Object.assign({}, state, { styles: {loadingBar:action.value}})
+		case "SET_SIDE_MENU": {
+	     console.log('Hit Reducer')
+		  return Object.assign({}, state, { styles: {sideMenu:action.value}})
 		}
 		default:
 		return state;

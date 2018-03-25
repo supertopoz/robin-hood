@@ -1,9 +1,9 @@
 import React from 'react';
 
-module.exports.changeUser = (data) => {
+module.exports.sideMenu = (data) => {
 
 	return {
-		type: "SET_LOADING_BAR",
+		type: "SET_SIDE_MENU",
 		value: data
 	}
 }
