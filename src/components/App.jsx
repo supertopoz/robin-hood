@@ -11,13 +11,24 @@ import firebaseui from 'firebaseui';
 import { connect } from "react-redux"
 import Header from './Header.jsx'
 import Menu from './Menu.jsx'
-import Home from './Home.jsx'
-import History from './History.jsx'
+
 import Footer from './Footer.jsx'
 import Ad from './Ad.jsx'
 import Sidebar from './Sidebar.jsx'
 import AdTwo from './AdTwo.jsx'
 import './styles.css'
+
+// Routes
+import Home from './Home.jsx'
+import Accommodation from './Accommodation.jsx'
+import Gallary from './Gallary.jsx'
+import News from './News.jsx'
+import History from './History.jsx'
+import Links from './Links.jsx'
+import FolkClub from './FolkClub.jsx'
+import Shop from './Shop.jsx'
+
+
 
 const Wrapper = styled.div`
    max-width: 1024px;
@@ -50,10 +61,15 @@ class App extends React.Component {
     <Ad />
     <Sidebar />
     <AdTwo />
+
     <Route exact path='/' component={Home} />    
-    <Route exact path='/history' component={History} />    
-  {/*    <Route path='/login' component={Login} />    
-      <Route path="/settings" component={Settings}/>*/}
+    <Route  path='/accommodation' component={Accommodation} />    
+    <Route  path='/gallary' component={Gallary} />    
+    <Route  path='/news' component={News} />    
+    <Route  path='/history' component={History} />    
+    <Route  path='/links' component={Links} />    
+    <Route  path='/folkclub' component={FolkClub} />    
+    <Route  path='/shop' component={Shop} />    
     <Footer />
 		</Wrapper>	    
 		</Router>

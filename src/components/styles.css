@@ -33,15 +33,15 @@ h1{
         "footer   footer";
    }
 }
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   
    .wrapper {
       grid-template-columns: 1fr 4fr 1fr;
       grid-template-areas:
          "header header  header"
          "nav    content sidebar"
-         "adTwo    content sidebar"
-         "adTwo    content ad"
+         "adTwo  content sidebar"
+         "adTwo  content ad"
          "footer footer  footer";
    }
 }

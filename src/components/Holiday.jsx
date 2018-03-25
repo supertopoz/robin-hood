@@ -1,32 +1,30 @@
 import React from 'react'
 import { Link} from 'react-router-dom'
 import styled from 'styled-components'
-import firebase from 'firebase';
 import { connect  } from "react-redux"
 import { history } from 'react-router'
 
-
-const HeaderClass = styled.div`
+const Content = styled.div`
   display: grid;
-  grid-area: header;
+  grid-area: content;
   border: 1px solid;
 `;
 
 
-class Header extends React.Component {
+class  Holiday extends React.Component {
   constructor(props){
     super(props);
   }
 
   render(){
   return (  
-  <HeaderClass className="header">   
-   <h1>THE BAYFAIR</h1>
-  </HeaderClass>
+  <Content>
+  Holiday Routes
+  </Content>
    )
   }
 
 }
 
 
-export default Header
+export default Holiday
