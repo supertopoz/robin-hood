@@ -43,7 +43,7 @@ const Wrapper = styled.div`
 
 @connect((store) => { 
   return {
-    user: store
+    user: store.styleReducer.styles
   };
 })
 

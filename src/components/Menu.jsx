@@ -6,13 +6,7 @@ import firebase from 'firebase';
 import { connect  } from "react-redux"
 import { history } from 'react-router'
 
-
-
-const theme = {
-  width: 250,
-  closeBtn: 'none'
-}
-
+import * as userFunc from '../redux/actions/userActions.js'
 
 const Nav = styled.div`
   display: grid;
@@ -28,10 +22,10 @@ const Nav = styled.div`
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #4e4a46;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 40px;
   }
 `;
 
@@ -62,11 +56,17 @@ const CloseBtn = styled.div`
     position: absolute;
     top:10px;
     right: 25px;
-    font-size: 36px;
+    font-size: 25px;
     margin-left: 50px;
     display: block;
   }
 `;
+
+@connect((store) => {
+  return {
+    style: store.styleReducer.styles
+  };
+})
 
 class Menu extends React.Component {
   constructor(props){
@@ -74,22 +74,17 @@ class Menu extends React.Component {
     this.state = {
       width: 250
     }  
-    this.closeMenu = this.closeMenu.bind(this)  
-    this.openMenu = this.openMenu.bind(this)  
+    this.closeMenu = this.closeMenu.bind(this)
   }
 
   closeMenu(){
-    this.setState({width: 0})
-  }
-
-  openMenu(){
-    this.setState({width: 250})
+    this.props.dispatch(userFunc.sideMenu(0))
   }
 
   render(){
   return (   
-  <Nav theme={{ width: this.state.width}}>
-  <CloseBtn onClick={(e) => this.closeMenu()}>X</CloseBtn>
+  <Nav theme={{ width: this.props.style.sideMenu}}>
+  <CloseBtn onClick={(e) =>this.closeMenu()}>X</CloseBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/'>Home</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/accommodation/holiday'>Accomodation</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/news'>News</MenuBtn>
