@@ -21,7 +21,7 @@ import './styles.css'
 // Routes
 import Home from './Home.jsx'
 import Accommodation from './Accommodation.jsx'
-import Gallary from './Gallary.jsx'
+import Gallery from './Gallery.jsx'
 import News from './News.jsx'
 import History from './History.jsx'
 import Links from './Links.jsx'
@@ -64,7 +64,7 @@ class App extends React.Component {
 
     <Route exact path='/' component={Home} />    
     <Route  path='/accommodation' component={Accommodation} />    
-    <Route  path='/gallary' component={Gallary} />    
+    <Route  path='/gallery' component={Gallery} />    
     <Route  path='/news' component={News} />    
     <Route  path='/history' component={History} />    
     <Route  path='/links' component={Links} />    

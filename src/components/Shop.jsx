@@ -19,7 +19,10 @@ class  Shop extends React.Component {
   render(){
   return (  
   <Content>
-  Shop
+  With the shop it is easy to keep amazon links. 
+  <p>Other things are possible also such as selling directly from the site. </p>
+  <p>In this section I was also wondering about some local Robin-hood bay shops showcasing their own products etc. </p>
+  <p>This could be a great place to generate revenue for local companies and a place to take a small share of that revenue. </p>
   </Content>
    )
   }

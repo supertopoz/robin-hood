@@ -19,7 +19,8 @@ class  Sidebar extends React.Component {
   render(){
   return (  
   <Content>
-  Sidebar
+  The sidebar can contain API data. 
+  Perhaps a weather API, Tide API, and travel API. 
   </Content>
    )
   }

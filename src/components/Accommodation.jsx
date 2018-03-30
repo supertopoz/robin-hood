@@ -14,22 +14,23 @@ const Content = styled.div`
   display: grid;
   grid-area: content;
   border: 1px solid;
-  grid-template-rows: 15% 90%;
+  grid-template-rows: 28px 70%;
 `;
 
 const ButtonLink = styled(Link)`
 
-  margin: 2px;
+  margin: 1px;
+
   background: #fffce1;
-  padding: 5px;
-  font-size: 10px;
+  padding: 1px;
+  font-size: 8px;
   text-align: center;
   letter-spacing: 1px;
   font-weight: 800;
   cursor: pointer;
   color: #4e4a46;
   &:hover{
-    background: #c94e50;
+  background: #c94e50;
   color:#fffce1;
   }
 
@@ -37,9 +38,8 @@ const ButtonLink = styled(Link)`
 
 const Menu = styled.div`
   display: grid;
-  align-content: space-between;
-  justify-content: space-around;
-  grid-template-columns: repeat(auto-fill,  7rem)
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 `;
 
 class  Accommodation extends React.Component {

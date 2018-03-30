@@ -17,7 +17,11 @@ class  HolidayAccommodation extends React.Component {
   render(){
   return (  
   <Content>
-  HolidayAccommodation Routes
+  I suggest here that each entry for a holiday accommodation is made as a modular data card. Then the data comes from a google sheet that you control. 
+  The sheet will have columns for each part of each data card. 
+
+  <p>It is possible to add images and Google maps for each accommodation</p>
+  <p>It is also possible to create a booking API in this location. It could also be possible for a hotel etc to show availability</p>
   </Content>
    )
   }

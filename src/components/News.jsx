@@ -19,7 +19,7 @@ class  News extends React.Component {
   render(){
   return (  
   <Content>
-  News
+  It might be worth re-thinking the news section - currently it changes every so often. Perhaps a blog feed here would be cool. 
   </Content>
    )
   }

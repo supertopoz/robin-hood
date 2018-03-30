@@ -12,8 +12,8 @@ const Nav = styled.div`
   display: grid;
   grid-gap: 5px;
   grid-area: nav;
-    align-content: space-between;
-    justify-content: space-around;
+  align-content: space-between;
+  justify-content: space-around;
   grid-template-columns: repeat(auto-fill, 170px); 
   @media (max-width: 372px){
     height: 100%;
@@ -86,9 +86,9 @@ class Menu extends React.Component {
   <Nav theme={{ width: this.props.style.sideMenu}}>
   <CloseBtn onClick={(e) =>this.closeMenu()}>X</CloseBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/'>Home</MenuBtn>
-  <MenuBtn onClick={(e) => this.closeMenu()} to='/accommodation/holiday'>Accomodation</MenuBtn>
+  <MenuBtn onClick={(e) => this.closeMenu()} to='/accommodation/holiday'>Accommodation</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/news'>News</MenuBtn>
-  <MenuBtn onClick={(e) => this.closeMenu()} to='/gallary'>Gallary</MenuBtn>
+  <MenuBtn onClick={(e) => this.closeMenu()} to='/gallery'>Gallery</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/history'>History</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/links'>Links</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/folkclub'>Folk club</MenuBtn>
