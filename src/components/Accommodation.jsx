@@ -13,22 +13,22 @@ import CampingAndCaravans from './CampingAndCaravans.jsx'
 const Content = styled.div`
   display: grid;
   grid-area: content;
-  border: 1px solid;
-  grid-template-rows: 28px 70%;
+  grid-template-rows: 40px 70%;
 `;
 
 const ButtonLink = styled(Link)`
 
   margin: 1px;
-
-  background: #fffce1;
-  padding: 1px;
-  font-size: 8px;
+  border: 0.5px solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
   text-align: center;
   letter-spacing: 1px;
   font-weight: 800;
   cursor: pointer;
   color: #4e4a46;
+
   &:hover{
   background: #c94e50;
   color:#fffce1;
@@ -39,7 +39,7 @@ const ButtonLink = styled(Link)`
 const Menu = styled.div`
   display: grid;
 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 `;
 
 class  Accommodation extends React.Component {
@@ -51,10 +51,9 @@ class  Accommodation extends React.Component {
   return (  
   <Content>
   <Menu>
-  <ButtonLink to={`${this.props.match.path}/holiday`}>Holiday Accommodation</ButtonLink>  
-  <ButtonLink to={`${this.props.match.path}/holiday-cottages`}>Holiday Cottages</ButtonLink>  
-  <ButtonLink to={`${this.props.match.path}/bed-and-breakfast`}>Bed & Breakfast</ButtonLink>  
-  <ButtonLink to={`${this.props.match.path}/camping-and-caravans`}>Camping and Caravans</ButtonLink>  
+  <ButtonLink to={`${this.props.match.path}/holiday-cottages`}>Cottages</ButtonLink>  
+  <ButtonLink to={`${this.props.match.path}/bed-and-breakfast`}>B & B</ButtonLink>  
+  <ButtonLink to={`${this.props.match.path}/camping-and-caravans`}>Camping</ButtonLink>  
   </Menu>
   
   <Route exact path={`${this.props.match.path}/holiday`} component={HolidayAccommodation}/>

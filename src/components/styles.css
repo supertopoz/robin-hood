@@ -7,6 +7,28 @@ h1{
   color:  #4e4a46;
 }
 
+h3 {
+  color: #4e4a46;
+}
+
+.slick-next {
+  right: 2px !important;
+  z-index: 10;
+}
+
+.slick-prev {
+    left: 2px !important;
+    z-index: 10;
+}
+
+.slick-dots{ 
+  bottom: 0px;
+ }
+
+ a {
+  text-decoration: none;
+ }
+
 .wrapper {
    display: grid;
    grid-gap: 20px;

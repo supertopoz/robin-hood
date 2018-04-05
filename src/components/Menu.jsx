@@ -14,6 +14,7 @@ const Nav = styled.div`
   grid-area: nav;
   align-content: space-between;
   justify-content: space-around;
+  max-height: 300px;
   grid-template-columns: repeat(auto-fill, 170px); 
   @media (max-width: 372px){
     height: 100%;
@@ -35,7 +36,7 @@ const MenuBtn = styled(Link)`
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 800;
+  font-weight: 600;
   border-top-left-radius: 20px 50px;
   border-top-right-radius: 20px 50px;
   border-bottom-right-radius: 20px 50px;
@@ -86,7 +87,7 @@ class Menu extends React.Component {
   <Nav theme={{ width: this.props.style.sideMenu}}>
   <CloseBtn onClick={(e) =>this.closeMenu()}>X</CloseBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/'>Home</MenuBtn>
-  <MenuBtn onClick={(e) => this.closeMenu()} to='/accommodation/holiday'>Accommodation</MenuBtn>
+  <MenuBtn onClick={(e) => this.closeMenu()} to='/accommodation/holiday-cottages'>Accommodation</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/news'>News</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/gallery'>Gallery</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/history'>History</MenuBtn>

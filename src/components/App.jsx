@@ -31,7 +31,7 @@ import Shop from './Shop.jsx'
 
 
 const Wrapper = styled.div`
-   max-width: 1024px;
+   max-width: 1200px;
    margin: 0 auto;
    font: 1.2em Helvetica, arial, sans-serif;
    color: #fffce1;
@@ -53,12 +53,14 @@ class App extends React.Component {
   }
 
   render(){
+
   	return(
 		<Router>
 		<Wrapper className="wrapper">
 		<Header />
     <Menu />
     <Ad />
+    
     <Sidebar />
     <AdTwo />
 
