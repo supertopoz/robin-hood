@@ -13,19 +13,18 @@ h3 {
 
 .slick-next {
   right: 2px !important;
-  z-index: 10;
+  z-index: 2;
 }
 
 .slick-prev {
     left: 2px !important;
-    z-index: 10;
+    z-index: 2;
 }
 
 .slick-dots{ 
-  bottom: 0px;
+  bottom: 10px;
  }
-
- a {
+a {
   text-decoration: none;
  }
 

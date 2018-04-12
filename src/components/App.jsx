@@ -36,7 +36,6 @@ const Wrapper = styled.div`
    font: 1.2em Helvetica, arial, sans-serif;
    color: #fffce1;
    padding: 5px;
-   border: 1px solid;
 `;
 
 
@@ -47,11 +46,17 @@ const Wrapper = styled.div`
   };
 })
 
+
+
+
 class App extends React.Component {
   constructor(props){
   	super(props);
   }
 
+  componentWillMount(){
+    console.log(this.props)
+  }
   render(){
 
   	return(
@@ -71,7 +76,7 @@ class App extends React.Component {
     <Route  path='/history' component={History} />    
     <Route  path='/links' component={Links} />    
     <Route  path='/folkclub' component={FolkClub} />    
-    <Route  path='/shop' component={Shop} />    
+    <Route  path='/shop' component={Shop} />  
     <Footer />
 		</Wrapper>	    
 		</Router>

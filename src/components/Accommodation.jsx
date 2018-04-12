@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link} from 'react-router-dom'
 import styled from 'styled-components'
 import { connect  } from "react-redux"
 import { history } from 'react-router'
-import {  Route } from 'react-router-dom'
 
-import HolidayAccommodation from './HolidayAccommodation.jsx'
+import {  Route, Link } from 'react-router-dom'
+
 import HolidayCottages from './HolidayCottages.jsx'
 import BedAndBreakfast from './BedAndBreakfast.jsx'
 import CampingAndCaravans from './CampingAndCaravans.jsx'
@@ -45,19 +44,26 @@ const Menu = styled.div`
 class  Accommodation extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      view: HolidayCottages
+    }
+  }
+
+  componentWillMount(){
+    console.log(this.props.match.path)
+    
   }
 
   render(){
   return (  
   <Content>
-  <Menu>
+  <Menu> 
   <ButtonLink to={`${this.props.match.path}/holiday-cottages`}>Cottages</ButtonLink>  
   <ButtonLink to={`${this.props.match.path}/bed-and-breakfast`}>B & B</ButtonLink>  
   <ButtonLink to={`${this.props.match.path}/camping-and-caravans`}>Camping</ButtonLink>  
   </Menu>
-  
-  <Route exact path={`${this.props.match.path}/holiday`} component={HolidayAccommodation}/>
-  <Route path={`${this.props.match.path}/holiday-cottages`} component={HolidayCottages } />  
+
+  <Route path={`${this.props.match.path}/holiday-cottages`} component={ HolidayCottages } />  
   <Route path={`${this.props.match.path}/bed-and-breakfast`} component={BedAndBreakfast } />  
   <Route path={`${this.props.match.path}/camping-and-caravans`} component={CampingAndCaravans } /> 
   </Content>

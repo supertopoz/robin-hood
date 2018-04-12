@@ -17,16 +17,16 @@ const Nav = styled.div`
   max-height: 300px;
   grid-template-columns: repeat(auto-fill, 170px); 
   @media (max-width: 372px){
-    height: 100%;
     width: ${props => props.theme.width}px;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     background-color: #4e4a46;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 40px;
+    padding-bottom: 40px;
   }
 `;
 
@@ -87,7 +87,7 @@ class Menu extends React.Component {
   <Nav theme={{ width: this.props.style.sideMenu}}>
   <CloseBtn onClick={(e) =>this.closeMenu()}>X</CloseBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/'>Home</MenuBtn>
-  <MenuBtn onClick={(e) => this.closeMenu()} to='/accommodation/holiday-cottages'>Accommodation</MenuBtn>
+  <MenuBtn onClick={(e) => this.closeMenu()} to='/accommodation'>Accommodation</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/news'>News</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/gallery'>Gallery</MenuBtn>
   <MenuBtn onClick={(e) => this.closeMenu()} to='/history'>History</MenuBtn>
